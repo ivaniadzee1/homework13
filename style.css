@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,700&family=Plus+Jakarta+Sans:wght@800&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&family=DM+Serif+Display:ital@0;1&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,700&family=Karla:wght@200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@800&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+}
+
+.opi{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Karla;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; 
+    letter-spacing: 1.364px;
+    display: flex;
+}
+.arad{
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.364px;
+    display: flex;
+    border: 1.5px solid #FFF;
+    padding: 5px 80px;
+}
+.rati{
+    display: none;
+}
+.brgr-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: -100%;
+    top: 80px;
+    gap: 25px;
+    flex-direction: column;
+    background: #2C2830;
+    width: 375px;
+    height: 667px;
+    transition: 0.3s;
+    background-image: url(./image/2.svg);
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-position-x: 0;
+    z-index: 1;
+}
+.brgr-menu.active{
+    left: 0;
+}
+.wipa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin-top: 40px;
+}
+
+.pui{
+    margin: 2px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.burger{
+    display: block;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 1px 4px 1px 4px;
+    margin-right: 24px;
+}
+.burger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.burger.active .bar:nth-child(1){
+    opacity: 1;
+    transform: translateY(8px) rotate(45deg);
+}
+.burger.active .bar:nth-child(3){
+    opacity: 1;
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.teta{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.koks{
+    margin: 31px 0 31px 24px;
+}
+.mai{
+    display: none;
+}
+.kaikaci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fm10{
+ display: none;
+}
+.zurab{
+    width: 375px;
+    height: 500px;
+    background: #2D2641;
+    background-image: url(./image/8.svg),url(./image/72.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 225%, -10% -550%;
+    padding-top: 93px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mess{
+    margin: 0px 112px 40px 112px;
+}
+.human{
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.667px;
+    width: 327px;
+    height: 96px;
+}
+.gyl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 327px;
+    height: 130px;
+    flex-shrink: 0;
+    margin: 16px;
+}
+.but1{
+    border: 1.5px solid #FFF;
+    background: #2D2641;
+    padding: 13px 24px 12px 24px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 40px;
+}
+.but1:hover{
+    background: #FFF;
+    color: #2C2830;
+}
+.davit{
+    width: 150px;
+    height: 1px;
+    background: #C396C6;
+    margin: 140px 112px 40px 112px;
+    
+}
+.we{
+    width: 341px;
+    height: 48px;
+    color: #2C2830;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; 
+    letter-spacing: -0.667px;
+    margin: auto;
+    margin-left: -100px;
+}
+.sec1{
+    margin: 80px 24px 56px 24px;
+}
+.image{
+    margin-left: 121px;
+}
+.snapp{
+    width: 327px;
+    height: 38px;
+    color: #2C2830;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.389px;
+    margin-top: 32px;
+}
+.our{
+    width: 327px;
+    height: 78px;
+    color: #837D88;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-top: 16px;
+}
+.seqcia2{
+    margin: 56px 24px;
+}
+.luka{
+    width: 327px;
+    height: 344px;
+    background: #2D2641;
+    margin: 140px 24px 0 24px;
+    background-image: url(./image/luka.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    padding-top: 71px;
+    margin-top: 20px;
+}
+.fnd{
+    color: #FFF;
+    text-align: center;
+    font-family: 'DM Serif Display';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 100% */
+    letter-spacing: -0.556px;
+    width: 241px;
+    height: 120px;
+    flex-shrink: 0;
+    margin: auto;
+}
+.buttex{
+    border: 1.5px solid #FFF;
+    background: #2D2641;
+    padding: 13px 24px 12px 24px;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 40px;
+}
+.buttex:hover{
+    background: #FFF;
+    color: #2C2830;
+}
+footer{
+    margin-top: 140px;
+    background-image: url(./image/ftimg.svg);
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 1025px;
+    flex-shrink: 0;
+    padding-top: 88px;
+}
+.cl{
+    margin: 0 32px 32px 131px;
+}
+.linkes{
+    margin: 0 0 40px 115px;
+}
+.xazi{
+    width: 327px;
+    height: 1px;
+    background: #DADADA;
+    margin-left: 23px;
+}
+.ouc{
+    width: 327px;
+    color: #837D88;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+.company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:1px;
+}
+.cop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: 327px;
+    color: #2D2641;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+.cop1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: 327px;
+    color: #2D2641;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+.cop2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    width: 327px;
+    color: #2D2641;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+.footer2{
+    display: none;
+}
